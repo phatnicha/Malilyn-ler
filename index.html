@@ -103,7 +103,7 @@
 </head>
 <body class="flex flex-col items-center py-6 px-4 text-brown-600 relative overflow-x-hidden">
 
-    <!-- Background Decorative SVGs (พื้นหลังเดิมเป๊ะๆ) -->
+    <!-- Background Decorative SVGs -->
     <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
         <svg class="absolute top-[5%] left-[10%] w-8 h-8 text-pink-300 anim-float-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
         <svg class="absolute top-[15%] left-[2%] w-6 h-6 text-white/60 anim-pulse" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -131,12 +131,10 @@
         <!-- Header -->
         <div class="text-center pt-2 pb-2 relative">
             <h1 class="text-2xl font-bold tracking-tight text-pink-500 flex items-center justify-center gap-2">
-                <!-- หัวใจซ้าย -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-pink-400 anim-pulse">
                     <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
                 </svg>
                 Malilyn-ler
-                <!-- หัวใจขวา -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-pink-400 anim-pulse transform -scale-x-100">
                     <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
                 </svg>
@@ -144,27 +142,24 @@
             <p class="text-sm font-medium text-brown-400 mt-1">Payment & Checkout</p>
         </div>
 
-        <!-- ================= ดีไซน์การ์ดแบบใหม่ (Glass & App Style) ================= -->
+        <!-- Glass Card Container -->
         <div class="glass-card rounded-[40px] p-3 relative z-10">
             
-            <!-- SVG ตกแต่งบนการ์ดที่กลับมาแล้ว 💖 -->
             <svg class="absolute -top-4 -left-2 w-9 h-9 text-pink-300 anim-float-1 z-20 drop-shadow-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
             <svg class="absolute top-[25%] -right-3 w-7 h-7 text-pink-200 anim-float-2 z-20 drop-shadow-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
             <svg class="absolute bottom-[40%] -left-3 w-5 h-5 text-pink-400 anim-spin z-20 drop-shadow-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
 
             <!-- รูปภาพ (พร้อมกรอบเส้นประวิ่ง) -->
             <div class="relative p-2 rounded-[36px] z-10">
-                <!-- SVG เส้นประวิ่ง -->
                 <svg class="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="2" y="2" width="calc(100% - 4px)" height="calc(100% - 4px)" rx="34" fill="none" stroke="#f472b6" stroke-width="2.5" stroke-dasharray="12 12" stroke-linecap="round" class="animate-dash" />
                 </svg>
-                <!-- คอนเทนเนอร์รูปภาพ -->
                 <div class="rounded-[28px] overflow-hidden relative shadow-sm border-[4px] border-white">
-                    <img src="https://i.postimg.cc/yYXXLQnm/att-YZKp-Oou02U1m01U9E7IVQ5yixn-Mty-Ak-Ll-S0rpd-OVE00.jpg" alt="บัญชี Malilyn-ler Payment" class="w-full h-auto object-cover" onerror="this.src='https://placehold.co/600x600/fce7f3/ec4899?text=Malilyn-ler+Payment'">
+                    <img src="line_oa_chat_260917_011708.jpeg" alt="บัญชี Malilyn-ler Payment" class="w-full h-auto object-cover" onerror="this.src='https://placehold.co/600x600/fce7f3/ec4899?text=Malilyn-ler+Payment'">
                 </div>
             </div>
 
-            <!-- โซนข้อความ (จัดเรียงเป็นสัดส่วน) -->
+            <!-- โซนข้อความ -->
             <div class="p-4 pt-6 space-y-5">
                 
                 <!-- กล่องต้อนรับ -->
@@ -199,12 +194,11 @@
                     <div class="h-px bg-pink-100 flex-1"></div>
                 </div>
 
-                <!-- โซนบัญชีธนาคาร (สไตล์ Virtual Card) -->
+                <!-- โซนบัญชีธนาคาร -->
                 <div class="space-y-4">
                     
-                    <!-- บัตรกสิกรไทย (โทนน้ำตาล) -->
+                    <!-- บัตรกสิกรไทย -->
                     <div class="virtual-card relative bg-gradient-to-br from-brown-400 to-brown-500 rounded-[24px] p-5 shadow-lg shadow-brown-500/20 overflow-hidden cursor-pointer border border-brown-300/30" onclick="copyText('1233376317', this, 'kbank')">
-                        <!-- ลายน้ำ K+ -->
                         <svg class="absolute -right-6 -bottom-6 w-32 h-32 text-white opacity-10 transform -rotate-12 pointer-events-none" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
                         
                         <div class="relative z-10 flex flex-col gap-4">
@@ -224,9 +218,8 @@
                         </div>
                     </div>
 
-                    <!-- บัตร TrueMoney (โทนชมพูอ่อน) -->
+                    <!-- บัตร TrueMoney -->
                     <div class="virtual-card relative bg-gradient-to-br from-pink-300 to-pink-400 rounded-[24px] p-5 shadow-lg shadow-pink-400/20 overflow-hidden cursor-pointer border border-pink-200/50" onclick="copyText('0954920347', this, 'true')">
-                        <!-- ลายน้ำ True -->
                         <svg class="absolute -left-6 -top-6 w-32 h-32 text-white opacity-20 transform rotate-12 pointer-events-none" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
 
                         <div class="relative z-10 flex flex-col gap-4">
@@ -329,7 +322,6 @@
                 
                 showToast();
 
-                // อัปเดตสไตล์ปุ่มเวลาคลิกให้เข้ากับบัตรสไตล์ใหม่
                 const buttonElement = containerElement.querySelector(type === 'kbank' ? '.kbank-btn' : '.true-btn');
                 const originalHtml = buttonElement.innerHTML;
                 
@@ -337,7 +329,6 @@
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                     สำเร็จ
                 `;
-                // เปลี่ยนปุ่มเป็นสีทึบเพื่อความชัดเจนตอนกด
                 buttonElement.classList.replace('bg-white', 'bg-white/20');
                 buttonElement.classList.replace('text-brown-500', 'text-white');
                 buttonElement.classList.replace('text-pink-500', 'text-white');
